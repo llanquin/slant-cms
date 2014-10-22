@@ -1,3 +1,3 @@
 slant-cms
 =========
-Minimalistic lightwheight blogging system.
+Minimalistic, lightwheight blogging system.
