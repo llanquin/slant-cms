@@ -1,11 +1,9 @@
 slant-cms
 =========
+[![Build Status](https://magnum.travis-ci.com/EZTEQ/slant-cms.svg?token=VzYpme59KqhXoRebGz4m&branch=master)](https://magnum.travis-ci.com/EZTEQ/slant-cms)
 Minimalistic, lightwheight blogging system.
 
 Requirements
 ------------
-*PHP 5.5+ (recommended)
-*MySQL(i)
-
-- - -
-[![Build Status](https://magnum.travis-ci.com/EZTEQ/slant-cms.svg?token=VzYpme59KqhXoRebGz4m&branch=master)](https://magnum.travis-ci.com/EZTEQ/slant-cms)
+- PHP 5.5+ (recommended)
+- MySQL(i)
