@@ -9,4 +9,4 @@ Requirements
 
 
 - - -
-Travis-CI [![Build Status](https://magnum.travis-ci.com/EZTEQ/slant-cms.svg?token=VzYpme59KqhXoRebGz4m&branch=master)](https://magnum.travis-ci.com/EZTEQ/slant-cms)
+[![Build Status](https://magnum.travis-ci.com/EZTEQ/slant-cms.svg?token=VzYpme59KqhXoRebGz4m&branch=master)](https://magnum.travis-ci.com/EZTEQ/slant-cms)
