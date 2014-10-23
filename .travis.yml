@@ -1,0 +1,2 @@
+language: php
+script: for i in *.php; do php -l $i; done
