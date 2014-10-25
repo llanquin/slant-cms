@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS `blogposts` (
   `title` text NOT NULL,
   `content` text NOT NULL,
   `userid` int(11) NOT NULL,
+  `datetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   `category` int(11) NOT NULL,
   PRIMARY KEY (`postid`),
   KEY `userid` (`userid`),
