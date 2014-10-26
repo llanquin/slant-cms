@@ -1,6 +1,7 @@
 <?php
 	require_once 'inc/_config.php';
-	
+	require_once 'inc/db.php';
+	require_once 'inc/global.php';
 	include 'templates/header.php';
 
 	$calledSite = $_GET['site'];
