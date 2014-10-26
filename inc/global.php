@@ -3,7 +3,7 @@
 	/* Array of all users data that exist in the database */
    function getUsers() {
        $sql = "SELECT * FROM accounts";
-       $ressource = mysql_query($sql); 
+       $ressource = mysqli_query($sql); 
        
 	   
 	   $counter = 0;
@@ -26,7 +26,7 @@
 	/* Array of a single user data */
 	function getUser($id_user) {
        $sql = "SELECT * FROM accounts WHERE userid = " . $id_user;
-       $ressource = mysql_query($sql); 
+       $ressource = mysqli_query($sql); 
 	   return $ressource;
 	}
 	
@@ -34,7 +34,7 @@
 	function getBlogPosts() {
 
 		$sql = "SELECT * FROM blogposts";
-		$ressource = mysql_query($sql);
+		$ressource = mysqli_query($sql);
 		
 		$counter = 0;
 		while($row = mysqli_fetch_assoc($ressource)) {
@@ -55,7 +55,7 @@
 	function getBlogPost($id_post) {
 
 		$sql = "SELECT * FROM blogposts WHERE postid = " . $id_post;
-		$ressource = mysql_query($sql);
+		$ressource = mysqli_query($sql);
 	   	return $ressource;
 	}
 ?>
