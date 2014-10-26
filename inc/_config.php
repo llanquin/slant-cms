@@ -18,9 +18,17 @@
 	/* General settings
 	=================== */
 	$settingsGeneral = [
-		"title"			=> "",
-		"subtitle"		=> "",
-		"canRegister"	=> "",
+		"title"			=> "My slant-cms",
+		"slogan"		=> "Minimalistic, lightwheight blogging system.",
+	];
+
+	/* Miscellaneous
+	================ */
+	$allowedSites = [
+		"home",
+		"categories",
+		"login",
+		"logout",
 	];
 
 ?>
