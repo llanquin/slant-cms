@@ -6,6 +6,8 @@
 	$calledSite = $_GET['site'];
 	if( isset($calledSite) && in_array($calledSite, $allowedSites) && file_exists('templates/' . $calledSite . '.php') ) {
 		include 'templates/' . $calledSite . '.php';
+	} elseif( !isset($calledSite) ) {
+		include 'tempaltes/home.php';
 	} else {
 		include 'templates/404.php';
 	}
