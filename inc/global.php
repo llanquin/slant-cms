@@ -2,7 +2,7 @@
    function getUser() {
        $array = array();
        $sql = "SELECT * FROM accounts";
-       $ressource = mysql_query($sql) or die(mysql_error()); 
+       $ressource = mysql_query($sql); 
        
 	   
 	   $counter = 0;
