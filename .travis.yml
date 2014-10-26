@@ -1,5 +1,9 @@
 language: php
 php:
   - 5.5
-  
+ 
+before_script:
+  - mysql -e 'create database slantcms;'
+  - mysql -u root slantcms < ./dump.sql
+
 script: for i in *.php; do php -l $i; done

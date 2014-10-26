@@ -1,6 +1,6 @@
 <?php
 	
-	/* slant-cms Config File
+	/* slant-cms config file
 	========================
 	This is the central configiguration file.
 	Everything that's changeable is here. */
@@ -9,9 +9,9 @@
 	/* MySQL connection
 	=================== */
 	$connectionParams = [
-		"hostname"		=> "",
-		"database"		=> "",
-		"username"		=> "",
+		"hostname"		=> "localhost",
+		"database"		=> "slantcms",
+		"username"		=> "root",
 		"password"		=> "",
 	];
 
