@@ -2,16 +2,12 @@
 	$con;
 
 	/* Mysql Connection with parameters to ensure a secure connection */
-	function open_db($hostname, $database, $username, $password) {
-		$con = mysqli_connect($hostname, $username, $password, $database);
-		if (!$con) {
-			return false;
-		}	
-		return $con;
+	function open_db($conParams) {
+		$con = mysqli_connect($conParams['hostname'], $conParams['username'], $conParams['password'], $conParams['database']);
 	}
 	
 	
-	function close_db($con) {
+	function close_db() {
 		mysqli_close($con);
 	} 
 ?>

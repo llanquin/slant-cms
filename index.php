@@ -2,6 +2,9 @@
 	require_once 'inc/_config.php';
 	require_once 'inc/db.php';
 	require_once 'inc/global.php';
+
+	open_db($connectionParams);
+
 	include 'templates/header.php';
 
 	$calledSite = $_GET['site'];
@@ -14,4 +17,6 @@
 	}
 
 	include 'templates/footer.php';
+
+	close_db();
 ?>
