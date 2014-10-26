@@ -1,5 +1,5 @@
 <?php 
-
+	
 	/* Array of all users data that exist in the database */
    function getUsers() {
        $sql = "SELECT * FROM accounts";
@@ -24,14 +24,14 @@
    } 
 	
 	/* Array of a single user data */
-	function getUser($id) {
-       $sql = "SELECT * FROM accounts WHERE userid = " . $id;
+	function getUser($id_user) {
+       $sql = "SELECT * FROM accounts WHERE userid = " . $id_user;
        $ressource = mysql_query($sql); 
 	   return $ressource;
 	}
 	
 	/* Array of all blogposts in the database */
-	function getBlogPost() {
+	function getBlogPosts() {
 
 		$sql = "SELECT * FROM blogposts";
 		$ressource = mysql_query($sql);
@@ -49,5 +49,13 @@
 		   $counter++;
        }
 	   return $array;
+	}
+
+	/* Array of single blogpost in the database */
+	function getBlogPost($id_post) {
+
+		$sql = "SELECT * FROM blogposts WHERE postid = " . $id_post;
+		$ressource = mysql_query($sql);
+	   	return $ressource;
 	}
 ?>
