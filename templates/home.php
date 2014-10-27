@@ -3,9 +3,9 @@
 <div class="container">
 	<?php foreach($posts as $post): ?>
 		<div class="panel panel-default">
-			<div class="panel-heading"><h1><?php $post['title']; ?></h1></div>
+			<div class="panel-heading"><h1><?= $post['title']; ?></h1></div>
 			<div class="panel-body">
-				<?php $post['content']; ?>
+				<?= $post['content']; ?>
 			</div>
 			<div class="panel-footer">
 				<p class="text-right">
