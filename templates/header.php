@@ -40,8 +40,12 @@
 				<div class="modal-body">
 					<h3>Hey, please enter your username and password!</h3>
 					<form role="form">
-						<input type="email" class="form-control" id="inputEmail" placeholder="Username">
+						<div class="form-group">
+							<input type="email" class="form-control" id="inputEmail" placeholder="Username">
+						</div>
+						<div class="form-group">
 						<input type="password" class="form-control" id="inputPassword" placeholder="Password">						
+						</div>
 						<div class="checkbox"><label><input type="checkbox"> Remember me</label></div>
 					</form>
 				</div>
