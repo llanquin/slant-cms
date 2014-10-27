@@ -25,7 +25,7 @@
 	/* Get user with specific id */
 	function getUser($con, $id_user) {
 		$sql = "SELECT * FROM accounts WHERE userid = " . $id_user;
-		return $con->query($sql);
+		return $con->query($sql)->fetch_assoc();
 	}
 	
 	/* Get array with all blogposts in database */
@@ -51,6 +51,6 @@
 	/* Get blogpost with specific id */
 	function getBlogPost($con, $id_post) {
 		$sql = "SELECT * FROM blogposts WHERE postid = " . $id_post;
-		return $con->query($con, $sql);
+		return $con->query($con, $sql)->fetch_assoc();
 	}
 ?>
