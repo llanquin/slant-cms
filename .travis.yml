@@ -7,3 +7,4 @@ before_script:
   - mysql -u root slantcms < ./dump.sql
 
 script: for i in *.php; do php -l $i; done
+script: find . -name '*.ext' \( -exec php -l "$PWD"/{} \; -o -print \);
