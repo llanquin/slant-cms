@@ -34,7 +34,7 @@
 		$res = $con->query($sql);
 		
 		$counter = 0;
-		while($row = $res->fetch_assoc($res)) {
+		while($row = $res->fetch_assoc()) {
 			$blogposts[$counter] = [
 				'postid' => $row['postid'],
 				'title' => $row['title'],
