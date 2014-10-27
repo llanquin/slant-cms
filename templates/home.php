@@ -9,7 +9,7 @@
 			</div>
 			<div class="panel-footer">
 				<p class="text-right">
-					<?= date("H:m:s d-m-Y", $post['datetime']); ?> &ndash; <a href="#"><?= getUser($con, $post['userid']); ?></a>
+					<?= date("H:m:s d-m-Y", $post['datetime']); ?> &ndash; <a href="#"><?= getUser($con, $post['userid'])['displayname']; ?></a>
 				</p>
 			</div>
 		</div>
