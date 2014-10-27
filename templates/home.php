@@ -1,4 +1,4 @@
-<?php $posts = getBlogPosts(); ?>
+<?php $posts = getBlogPosts($con); ?>
 
 <main>
 	<?php 

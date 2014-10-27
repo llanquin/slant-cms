@@ -1,9 +1,8 @@
 <?php
-	require_once 'inc/_config.php';
-	require_once 'inc/db.php';
+	require 'inc/_config.php';
 	
-	open_db($connectionParams);
-	require_once 'inc/global.php';
+	$con = new mysqli($connectionParams['hostname'], $connectionParams['username'], $connectionParams['password'], $connectionParams['database']);
+	require 'inc/dbfunctions.php';
 
 	include 'templates/header.php';
 
@@ -18,5 +17,5 @@
 
 	include 'templates/footer.php';
 
-	close_db();
+	$con->close();
 ?>
