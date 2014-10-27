@@ -1,7 +1,7 @@
 <?php $posts = getBlogPosts($con); ?>
 
 <div class="container">
-	<?php foreach($posts as $post) : ?>
+	<?php foreach($posts as $post): ?>
 		<div class="panel panel-default">
 			<div class="panel-heading"><h1><?php $post['title']; ?></h1></div>
 			<div class="panel-body">
@@ -9,9 +9,9 @@
 			</div>
 			<div class="panel-footer">
 				<p class="text-right">
-					<?php date("H:m:s d-m-Y", $post['datetime']); ?> &ndash; <a href="#"><?php getUser($con, $post['userid']); ?></a>
+					<?= date("H:m:s d-m-Y", $post['datetime']); ?> &ndash; <a href="#"><?= getUser($con, $post['userid']); ?></a>
 				</p>
 			</div>
 		</div>
-	<?php endforeach ?>
+	<?php endforeach; ?>
 </div>
