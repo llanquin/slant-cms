@@ -6,7 +6,7 @@
 		$res = $con->query($sql);
        
 		$counter = 0;
-		while($row = $con->fetch_assoc()){
+		while($row = $res->fetch_assoc()){
 			$users[$counter] = [
 				'userid' => $row['userid'],
 				'username' => $row['username'],
@@ -34,7 +34,7 @@
 		$res = $con->query($sql);
 		
 		$counter = 0;
-		while($row = $con->fetch_assoc($res)) {
+		while($row = $res->fetch_assoc($res)) {
 			$blogposts[$counter] = [
 				'postid' => $row['postid'],
 				'title' => $row['title'],
