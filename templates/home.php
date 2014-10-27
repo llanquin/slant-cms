@@ -1,14 +1,14 @@
 <?php $posts = getBlogPosts($con); ?>
 
-<main>
+<div class="container">
 	<?php 
 		foreach($posts as $post) {
-			echo('<article>');
+			echo('<div class="row">');
 			
 			echo('<h1>' . $post['title'] . '</h1>');
 			echo('<p>' . $post['content'] . '</p>');
 			
-			echo('</article>');
+			echo('</div>');
 		}
 	?>
-</main>
+</div>
