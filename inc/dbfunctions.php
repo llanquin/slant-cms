@@ -23,8 +23,13 @@
 	} 
 	
 	/* Get user with specific id */
-	function getUser($con, $id_user) {
+	function getUserById($con, $id_user) {
 		$sql = "SELECT * FROM accounts WHERE userid = " . $id_user;
+		return $con->query($sql)->fetch_assoc();
+	}
+	
+	function getUserByName($username) {
+		$sql = "SELECT * FROM accounts WHERE username = " . $username;
 		return $con->query($sql)->fetch_assoc();
 	}
 	
