@@ -28,7 +28,7 @@
 		return $con->query($sql)->fetch_assoc();
 	}
 	
-	function getUserByName($username) {
+	function getUserByName($con, $username) {
 		$sql = "SELECT * FROM accounts WHERE username = " . $username;
 		return $con->query($sql)->fetch_assoc();
 	}
