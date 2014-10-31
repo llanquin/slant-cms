@@ -1,4 +1,4 @@
-<?php $posts = getBlogPosts($con); ?>
+<?php $posts = getBlogposts($con); ?>
 
 <div class="container">
 	<?php foreach($posts as $post): ?>

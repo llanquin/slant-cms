@@ -34,7 +34,7 @@
 	}
 	
 	/* Get array with all blogposts in database */
-	function getBlogPosts($con) {
+	function getBlogposts($con) {
 		$sql = "SELECT * FROM blogposts ORDER BY postid DESC";
 		$res = $con->query($sql);
 		
@@ -54,7 +54,7 @@
 	}
 
 	/* Get blogpost with specific id */
-	function getBlogPost($con, $id_post) {
+	function getBlogpost($con, $id_post) {
 		$sql = "SELECT * FROM blogposts WHERE postid = " . $id_post;
 		return $con->query($con, $sql)->fetch_assoc();
 	}
